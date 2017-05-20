@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="nicosiput.com.iakbeginnerjustjava.OrderActivity">
+
+
+    <EditText
+        android:id="@+id/mTextNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/your_name"
+        android:textSize="@dimen/text_25"/>
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_14"
+        android:textAllCaps="true"
+        android:text="Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:layout_marginBottom="8dp"
+        tools:layout_width="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mSpinnerMenu" />
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_14"
+        android:textAllCaps="true"
+        android:text="Toping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbSusu"
+            android:text="Susu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rbCoklat"
+            android:text="Coklat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_14"
+        android:textAllCaps="true"
+        android:text="Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textSize="@dimen/text_14"
+            android:text="-"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/mButtonMin"
+            android:onClick="onClickMin" />
+        <TextView
+            android:textSize="@dimen/text_14"
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mTextQty" />
+        <Button
+            android:textSize="@dimen/text_14"
+            android:text="+"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/mButtonPlus"
+            android:onClick="OnClickPlus" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginBottom="8dp"
+        android:textSize="@dimen/text_17"
+        android:text="$5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mTextHarga" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:textSize="@dimen/text_14"
+            android:text="Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickReset" />
+        <Button
+            android:textSize="@dimen/text_14"
+            android:text="Order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mButtonOrder"
+            android:onClick="onClickOrder" />
+    </LinearLayout>
+</LinearLayout>
